@@ -9,7 +9,7 @@ function Login() {
   const [pass, setpass] = useState("");
   const [error, seterror] = useState("");
   const [data, setdatas] = useState("");
- const navigate=useNavigate();
+  const navigate = useNavigate();
   const loginhandle = async () => {
     console.log(email, pass);
     try {
@@ -17,7 +17,7 @@ function Login() {
         method: "post",
         headers: {
           "Content-Type": "application/json",
-          "x-api-key": "reqres_53c6f066c74441d3901ea39b347e19c0" 
+          "x-api-key": "reqres_53c6f066c74441d3901ea39b347e19c0",
         },
         body: JSON.stringify({
           email: email,
